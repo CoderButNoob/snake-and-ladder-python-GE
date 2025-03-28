@@ -1,10 +1,10 @@
-Snakes and Ladders Game
+#Snakes and Ladders Game
 
-Description
+##Description
 
 This Python program simulates the classic Snakes and Ladders game. Players roll a dice and move accordingly, encountering ladders that boost them up or snakes that pull them down. The game continues until a player reaches position 100.
 
-Features
+##Features
 
 Single-player mode
 
@@ -16,7 +16,7 @@ Random move selection (No Play, Snake, or Ladder)
 
 Ensures players do not exceed position 100
 
-How to Run
+##How to Run
 
 Ensure you have Python installed (Python 3 recommended).
 
@@ -28,7 +28,7 @@ python snakes_ladders.py
 
 Follow the on-screen instructions to play.
 
-Functions
+##Functions
 
 start_game(): Initializes player position.
 
@@ -44,7 +44,7 @@ count_dice_rolls(): Counts dice rolls needed to win.
 
 two_player_game(): Allows two players to play, alternating turns.
 
-Game Rules
+##Game Rules
 
 Players roll the dice to advance.
 
@@ -54,7 +54,7 @@ Landing on a snake moves the player down.
 
 The first player to reach exactly position 100 wins.
 
-Example Output
+##Example Output
 
 Player 1's Turn:
 Dice rolled: 4
