@@ -9,5 +9,11 @@ def dice_roll():
 def choose_move():
     return random.choice(["No play","Snake","Ladder"])
 
-def player_turn():
+def start_game():
+    position = start_game()
+
+    while position <100:
+        position = play_turn(position)
+        print(f"Curr Position {position}")
     
+    print("Congrats")
