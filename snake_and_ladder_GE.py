@@ -44,3 +44,14 @@ def play_turn(player_pos):
             print("Snake! Player moves down to:", player_pos)
 
     return player_pos
+
+def count_dice_rolls():
+    roll_count = 0
+    player_pos = start_game()
+    
+    while player_pos < 100:
+        roll_count += 1
+        player_pos = play_turn(player_pos)
+        print(f"Current Position: {player_pos} (Rolls: {roll_count})")
+    
+    print(f"\nCongratulations! You won the game in {roll_count} rolls.")
