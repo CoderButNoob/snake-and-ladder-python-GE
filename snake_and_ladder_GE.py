@@ -8,3 +8,6 @@ def dice_roll():
 
 def choose_move():
     return random.choice(["No play","Snake","Ladder"])
+
+def player_turn():
+    
