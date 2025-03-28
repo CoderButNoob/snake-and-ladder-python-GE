@@ -55,3 +55,26 @@ def count_dice_rolls():
         print(f"Current Position: {player_pos} (Rolls: {roll_count})")
     
     print(f"\nCongratulations! You won the game in {roll_count} rolls.")
+
+def two_player_game():
+    player1_pos = start_game()
+    player2_pos = start_game()
+    turn = 1
+    
+    while player1_pos < 100 and player2_pos < 100:
+        if turn % 2 == 1:
+            print("\nPlayer 1's Turn:")
+            player1_pos = play_turn(player1_pos)
+            if player1_pos >= 100:
+                print("\nCongratulations! Player 1 won the game!")
+                break
+        else:
+            print("\nPlayer 2's Turn:")
+            player2_pos = play_turn(player2_pos)
+            if player2_pos >= 100:
+                print("\nCongratulations! Player 2 won the game!")
+                break
+        turn += 1
+
+# Start the two-player game
+two_player_game()
